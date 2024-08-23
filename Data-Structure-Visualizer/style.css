@@ -1,0 +1,410 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    background-color: rgb(231, 231, 231);
+}
+
+nav {
+    position: static;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: green;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    flex: 1 1 auto;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: rgb(1, 50, 32);
+}
+
+/* Add styles for Array and Dequeue */
+.array,
+.dequeue {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-width: 0 3px 0 0;
+    border-color: black;
+    border-style: solid;
+    max-width: 500px;
+    margin: auto;
+}
+
+.array-display{
+    height: 450px;
+    width: 100%;
+    max-width: 200px;
+    border-width: 4px 4px 4px 4px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 10px 10px 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    padding-bottom: 5px;
+}
+
+.dequeue-display {
+    height: 450px;
+    width: 100%;
+    max-width: 200px;
+    border-width: 0px 4px 0px 4px;
+    border-color: black;
+    border-style: solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    padding-bottom: 5px;
+}
+
+
+
+header {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.heading {
+    color: green;
+}
+
+.visualizer {
+    display: none;
+    padding: 20px;
+    width: 80%;
+}
+
+.visualizer:target {
+    display: block;
+}
+
+.visualizer.active {
+    display: block;
+    /* Styles for active visualizer */
+}
+
+.visualizer h1 {
+    font-size: 1.8rem;
+    color: green;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .visualizer h1 {
+        font-size: 2.5rem;
+    }
+}
+
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    background-color: white;
+    box-shadow: 8px 8px 20px rgb(128, 128, 128);
+    margin: auto;
+    overflow: hidden;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container-header {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.container-header input,
+.linkedlist-input,
+.queue-input {
+    height: 50px;
+    width: 100%;
+    max-width: 400px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    padding: 0 20px;
+}
+
+.push,
+.queue-reset,
+.linkedlist-reset,
+.pop,
+.reset,
+.box,
+.linkedlist-append,
+.linkedlist-delete,
+.queue-enqueue,
+.queue-dequeue,
+.array-add, .array-remove, .array-reset, .dequeue-add-front, .dequeue-add-rear, .dequeue-remove-front,.dequeue-remove-rear, .dequeue-reset{
+    height: 60px;
+    width: 100%;
+    max-width: 140px;
+    font-size: 1.25rem;
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+    border: none;
+}
+
+.disable-button {
+    background-color: rgb(0, 59, 0);
+}
+
+.container-header button:active,
+.linkedlist-append:active,
+.linkedlist-delete:active,
+.queue-enqueue:active,
+.queue-dequeue:active {
+    transform: scale(0.95);
+}
+
+.container-body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.stack,
+.linkedlist,
+.queue {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-width: 0 3px 0 0;
+    border-color: black;
+    border-style: solid;
+    max-width: 500px;
+    margin: auto;
+}
+
+.linkedlist-display,
+.main-stack-bucket,
+.queue-display {
+    height: 450px;
+    width: 100%;
+    max-width: 200px;
+    border-width: 0 4px 4px 4px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    padding-bottom: 5px;
+}
+
+.linkedlist-display, .queue-display {
+    height: 450px;
+    width: 100%;
+    max-width: 200px;
+    border-width: 0 4px 0px 4px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 0 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    padding-bottom: 5px;
+}
+
+.main-stack-bucket {
+    height: 450px;
+    width: 100%;
+    max-width: 200px;
+    border-width: 0 4px 4px 4px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    gap: 5px;
+    padding-bottom: 5px;
+}
+
+.ele,
+.node {
+    height: 80px;
+    width: 90%;
+    max-width: 170px;
+    background-color: green;
+    color: white;
+    border: 4px black solid;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    text-align: center;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.sec1,
+.sec2,
+.sec3,
+.sec4 {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.message-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+}
+
+.message-box h2 {
+    color: green;
+}
+
+.message,
+.linkedlist-message,
+.queue-message,.dequeue-message, .array-message {
+    height: 100px;
+    width: 150%;
+    max-width: 400px;
+    padding: 10px;
+    font-size: 1.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(124, 124, 124);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.message p.add {
+    color: rgb(92, 255, 92);
+}
+
+.message p.remove {
+    color: rgb(255, 15, 59);
+}
+
+.message p.message {
+    color: rgb(255, 191, 0);
+}
+
+.message p.message-box,
+.queue-message p.queue-message-box {
+    font-weight: 600;
+}
+
+footer {
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer div {
+    margin: 0 10px; /* Add spacing between names */
+}
+
+footer p,
+footer a {
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+@media (min-width: 768px) {
+    .container-header {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .container-body {
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }
+
+    .stack,
+    .linkedlist,
+    .queue {
+        width: 45%;
+    }
+
+    .info {
+        width: 45%;
+    }
+}
