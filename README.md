@@ -1,7 +1,7 @@
 # DataStructure_Visualizer
 A data structure visualizer that dynamically displays push and pop operations for Stack, Linked List, Queue, Array, and Deque.
 # Link
-[[link](http://127.0.0.1:5500/index.html)](doc:linking-to-pages#anchor-links)
+[[Link](http://127.0.0.1:5500/index.html)]
 ## Description
 – Tools & technologies used: HTML,CSS ,Javascript ,Github
 
